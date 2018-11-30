@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,200 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Crystal_s_World" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="PKA-24-o6J">
+                                <rect key="frame" x="70" y="44" width="274" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="gnp-tz-yw1"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="0cJ-dd-lFM">
+                                <rect key="frame" x="0.0" y="113" width="414" height="783"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CxW-eg-85g">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="155"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="游" translatesAutoresizingMaskIntoConstraints="NO" id="oUh-Lh-dMV">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="155"/>
+                                                <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUP-1w-z7N">
+                                                <rect key="frame" x="10" y="10" width="394" height="127"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                <state key="normal" title="作 者 介 紹">
+                                                    <color key="titleColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        <constraints>
+                                            <constraint firstItem="eUP-1w-z7N" firstAttribute="leading" secondItem="CxW-eg-85g" secondAttribute="leadingMargin" constant="10" id="FC9-53-oi5"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="eUP-1w-z7N" secondAttribute="bottom" constant="10" id="ND4-PO-anL"/>
+                                            <constraint firstAttribute="bottom" secondItem="oUh-Lh-dMV" secondAttribute="bottom" id="Ugn-cU-sDH"/>
+                                            <constraint firstAttribute="trailing" secondItem="oUh-Lh-dMV" secondAttribute="trailing" id="gon-0F-5u3"/>
+                                            <constraint firstItem="oUh-Lh-dMV" firstAttribute="top" secondItem="CxW-eg-85g" secondAttribute="top" id="hYJ-us-Ati"/>
+                                            <constraint firstItem="oUh-Lh-dMV" firstAttribute="leading" secondItem="CxW-eg-85g" secondAttribute="leading" id="mId-4U-y5c"/>
+                                            <constraint firstAttribute="trailing" secondItem="eUP-1w-z7N" secondAttribute="trailing" constant="10" id="u0x-Fr-CE5"/>
+                                            <constraint firstItem="eUP-1w-z7N" firstAttribute="top" secondItem="CxW-eg-85g" secondAttribute="top" constant="10" id="x7B-wC-9RN"/>
+                                        </constraints>
+                                        <edgeInsets key="layoutMargins" top="8" left="0.0" bottom="8" right="0.0"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKc-Bm-b5A">
+                                        <rect key="frame" x="0.0" y="157" width="414" height="155"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottomRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="一顆開花的樹" translatesAutoresizingMaskIntoConstraints="NO" id="xkW-Ci-7f4">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="155"/>
+                                                <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ID9-5T-PcQ">
+                                                <rect key="frame" x="10" y="10" width="394" height="127"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                <state key="normal" title="畫 作">
+                                                    <color key="titleColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="xkW-Ci-7f4" secondAttribute="trailing" id="1bX-Kj-23C"/>
+                                            <constraint firstAttribute="trailing" secondItem="ID9-5T-PcQ" secondAttribute="trailing" constant="10" id="3SO-2E-qkj"/>
+                                            <constraint firstAttribute="bottom" secondItem="xkW-Ci-7f4" secondAttribute="bottom" id="Khz-4v-RhS"/>
+                                            <constraint firstItem="xkW-Ci-7f4" firstAttribute="top" secondItem="tKc-Bm-b5A" secondAttribute="top" id="M6T-Bo-4pV"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="ID9-5T-PcQ" secondAttribute="bottom" constant="10" id="gQJ-EW-Zkm"/>
+                                            <constraint firstItem="ID9-5T-PcQ" firstAttribute="leading" secondItem="tKc-Bm-b5A" secondAttribute="leadingMargin" constant="10" id="gko-VR-VbT"/>
+                                            <constraint firstItem="ID9-5T-PcQ" firstAttribute="top" secondItem="tKc-Bm-b5A" secondAttribute="top" constant="10" id="heL-bi-Vxx"/>
+                                            <constraint firstItem="xkW-Ci-7f4" firstAttribute="leading" secondItem="tKc-Bm-b5A" secondAttribute="leading" id="zg3-48-ubT"/>
+                                        </constraints>
+                                        <edgeInsets key="layoutMargins" top="8" left="0.0" bottom="8" right="0.0"/>
+                                        <viewLayoutGuide key="safeArea" id="ifj-Zf-2As"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUe-6i-BcQ">
+                                        <rect key="frame" x="0.0" y="314" width="414" height="155"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="topRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="起飛" translatesAutoresizingMaskIntoConstraints="NO" id="C5N-ej-DiO">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="155"/>
+                                                <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gol-nM-6aq">
+                                                <rect key="frame" x="10" y="10" width="394" height="127"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                <state key="normal" title="著 作">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        <constraints>
+                                            <constraint firstItem="C5N-ej-DiO" firstAttribute="top" secondItem="FUe-6i-BcQ" secondAttribute="top" id="2xD-N8-UV4"/>
+                                            <constraint firstItem="gol-nM-6aq" firstAttribute="top" secondItem="FUe-6i-BcQ" secondAttribute="top" constant="10" id="3ck-IE-76J"/>
+                                            <constraint firstAttribute="trailing" secondItem="gol-nM-6aq" secondAttribute="trailing" constant="10" id="B7Z-dQ-q9s"/>
+                                            <constraint firstItem="gol-nM-6aq" firstAttribute="leading" secondItem="FUe-6i-BcQ" secondAttribute="leadingMargin" constant="10" id="ROh-2U-Ru6"/>
+                                            <constraint firstItem="C5N-ej-DiO" firstAttribute="leading" secondItem="FUe-6i-BcQ" secondAttribute="leading" id="VhK-7r-msc"/>
+                                            <constraint firstAttribute="bottom" secondItem="C5N-ej-DiO" secondAttribute="bottom" id="YMH-41-bim"/>
+                                            <constraint firstAttribute="trailing" secondItem="C5N-ej-DiO" secondAttribute="trailing" id="aOK-AN-6eD"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="gol-nM-6aq" secondAttribute="bottom" constant="10" id="k4e-nA-uQg"/>
+                                        </constraints>
+                                        <edgeInsets key="layoutMargins" top="8" left="0.0" bottom="8" right="0.0"/>
+                                        <viewLayoutGuide key="safeArea" id="3Uy-Qj-dRc"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dbl-8N-5lo">
+                                        <rect key="frame" x="0.0" y="471" width="414" height="155"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="動心時刻" translatesAutoresizingMaskIntoConstraints="NO" id="1b3-vx-3r8">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="155"/>
+                                                <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kas-aa-Otd">
+                                                <rect key="frame" x="10" y="10" width="394" height="127"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                <state key="normal" title="活 動">
+                                                    <color key="titleColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        <constraints>
+                                            <constraint firstItem="1b3-vx-3r8" firstAttribute="top" secondItem="Dbl-8N-5lo" secondAttribute="top" id="Fna-et-Jp4"/>
+                                            <constraint firstAttribute="trailing" secondItem="1b3-vx-3r8" secondAttribute="trailing" id="GyS-Eo-3wb"/>
+                                            <constraint firstAttribute="bottom" secondItem="1b3-vx-3r8" secondAttribute="bottom" id="OGh-Fb-0n5"/>
+                                            <constraint firstAttribute="trailing" secondItem="Kas-aa-Otd" secondAttribute="trailing" constant="10" id="ccJ-f2-ea5"/>
+                                            <constraint firstItem="Kas-aa-Otd" firstAttribute="leading" secondItem="Dbl-8N-5lo" secondAttribute="leadingMargin" constant="10" id="dRF-7o-h8R"/>
+                                            <constraint firstItem="1b3-vx-3r8" firstAttribute="leading" secondItem="Dbl-8N-5lo" secondAttribute="leading" id="fA0-s5-AZw"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="Kas-aa-Otd" secondAttribute="bottom" constant="10" id="rBm-Kt-X87"/>
+                                            <constraint firstItem="Kas-aa-Otd" firstAttribute="top" secondItem="Dbl-8N-5lo" secondAttribute="top" constant="10" id="sX6-TC-rbf"/>
+                                        </constraints>
+                                        <edgeInsets key="layoutMargins" top="8" left="0.0" bottom="8" right="0.0"/>
+                                        <viewLayoutGuide key="safeArea" id="itH-Ez-IH9"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nf-Ci-Zx8">
+                                        <rect key="frame" x="0.0" y="628" width="414" height="155"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="今天" translatesAutoresizingMaskIntoConstraints="NO" id="Vtf-lg-0Db">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="155"/>
+                                                <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5DP-pc-msZ">
+                                                <rect key="frame" x="10" y="10" width="394" height="127"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                <state key="normal" title="週 邊 商 品">
+                                                    <color key="titleColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottomMargin" secondItem="5DP-pc-msZ" secondAttribute="bottom" constant="10" id="3tB-hi-JGf"/>
+                                            <constraint firstItem="Vtf-lg-0Db" firstAttribute="leading" secondItem="3nf-Ci-Zx8" secondAttribute="leading" id="Nd7-pu-DAQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="5DP-pc-msZ" secondAttribute="trailing" constant="10" id="fBl-9f-9g8"/>
+                                            <constraint firstItem="Vtf-lg-0Db" firstAttribute="top" secondItem="3nf-Ci-Zx8" secondAttribute="top" id="lkw-bo-VeG"/>
+                                            <constraint firstItem="5DP-pc-msZ" firstAttribute="leading" secondItem="3nf-Ci-Zx8" secondAttribute="leadingMargin" constant="10" id="op7-TX-LZI"/>
+                                            <constraint firstAttribute="bottom" secondItem="Vtf-lg-0Db" secondAttribute="bottom" id="vOb-xb-iod"/>
+                                            <constraint firstItem="5DP-pc-msZ" firstAttribute="top" secondItem="3nf-Ci-Zx8" secondAttribute="top" constant="10" id="yfu-cu-8zi"/>
+                                            <constraint firstAttribute="trailing" secondItem="Vtf-lg-0Db" secondAttribute="trailing" id="zmQ-XZ-Dhf"/>
+                                        </constraints>
+                                        <edgeInsets key="layoutMargins" top="8" left="0.0" bottom="8" right="0.0"/>
+                                        <viewLayoutGuide key="safeArea" id="Gw3-iC-3Vy"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="CxW-eg-85g" firstAttribute="top" secondItem="0cJ-dd-lFM" secondAttribute="topMargin" id="74U-3O-2Lb"/>
+                                    <constraint firstItem="CxW-eg-85g" firstAttribute="leading" secondItem="0cJ-dd-lFM" secondAttribute="leadingMargin" id="PWJ-8g-01j"/>
+                                    <constraint firstItem="CxW-eg-85g" firstAttribute="trailing" secondItem="0cJ-dd-lFM" secondAttribute="trailingMargin" id="gIK-ep-DQu"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0cJ-dd-lFM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ekk-tQ-xpN"/>
+                            <constraint firstAttribute="bottom" secondItem="0cJ-dd-lFM" secondAttribute="bottom" id="IcY-Ic-jah"/>
+                            <constraint firstItem="0cJ-dd-lFM" firstAttribute="top" secondItem="PKA-24-o6J" secondAttribute="bottom" id="JOB-32-oG4"/>
+                            <constraint firstAttribute="trailing" secondItem="0cJ-dd-lFM" secondAttribute="trailing" id="MaI-gV-xvM"/>
+                            <constraint firstItem="PKA-24-o6J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tBy-4q-azG"/>
+                            <constraint firstItem="PKA-24-o6J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zM1-3r-Lws"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-78.260869565217391" y="159.375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="banner" width="274" height="69"/>
+        <image name="一顆開花的樹" width="564" height="385"/>
+        <image name="今天" width="426" height="600"/>
+        <image name="動心時刻" width="564" height="385"/>
+        <image name="游" width="564" height="377"/>
+        <image name="起飛" width="564" height="359"/>
+    </resources>
 </document>
